@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#ffb3ac",
+                    "surface": "#131313",
+                    "inverse-surface": "#e5e2e1",
+                    "secondary-fixed-dim": "#ffb786",
+                    "surface-dim": "#131313",
+                    "on-background": "#e5e2e1",
+                    "on-error": "#690005",
+                    "on-primary-container": "#fff2f0",
+                    "tertiary": "#7bd1f8",
+                    "on-tertiary-fixed-variant": "#004d65",
+                    "on-primary-fixed-variant": "#930010",
+                    "surface-variant": "#353534",
+                    "on-surface": "#e5e2e1",
+                    "surface-container-highest": "#353534",
+                    "background": "#131313",
+                    "surface-bright": "#393939",
+                    "outline": "#ab8985",
+                    "inverse-primary": "#ba1a20",
+                    "on-tertiary": "#003546",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-primary-fixed": "#410003",
+                    "secondary": "#ffb786",
+                    "on-surface-variant": "#e4beba",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary-fixed": "#001f2a",
+                    "on-secondary": "#502400",
+                    "outline-variant": "#5b403d",
+                    "primary-fixed": "#ffdad6",
+                    "on-secondary-fixed": "#311300",
+                    "tertiary-container": "#00799c",
+                    "on-primary": "#680008",
+                    "surface-container": "#201f1f",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-container": "#e9f7ff",
+                    "surface-tint": "#ffb3ac",
+                    "on-secondary-container": "#542600",
+                    "on-secondary-fixed-variant": "#723600",
+                    "tertiary-fixed": "#bee9ff",
+                    "error-container": "#93000a",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "error": "#ffb4ab",
+                    "primary-container": "#d32f2f",
+                    "secondary-container": "#f27a00",
+                    "secondary-fixed": "#ffdcc6",
+                    "inverse-on-surface": "#313030",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#7bd1f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-kinetic-heat {
+            background: linear-gradient(135deg, #ffb3ac 0%, #d32f2f 100%);
+        }
+        .text-glow-spicy {
+            text-shadow: 0 0 20px rgba(211, 47, 47, 0.4);
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #131313; }
+        ::-webkit-scrollbar-thumb { background: #353534; border-radius: 10px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-2xl">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#ffb3ac]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="text-2xl font-black italic text-transparent bg-clip-text bg-gradient-to-br from-[#ffb3ac] to-[#d32f2f] font-['Epilogue'] uppercase tracking-tighter">BAKSO MERCON</span>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#ffb3ac] font-bold border-b-2 border-[#ffb3ac] pb-1 font-['Be_Vietnam_Pro'] uppercase tracking-[0.05em] text-sm" href="#">Beranda</a>
+<a class="text-stone-400 hover:text-stone-100 transition-colors font-['Be_Vietnam_Pro'] uppercase tracking-[0.05em] text-sm" href="#menu">Menu</a>
+<a class="text-stone-400 hover:text-stone-100 transition-colors font-['Be_Vietnam_Pro'] uppercase tracking-[0.05em] text-sm" href="#about">Tentang Kami</a>
+<a class="text-stone-400 hover:text-stone-100 transition-colors font-['Be_Vietnam_Pro'] uppercase tracking-[0.05em] text-sm" href="#contact">Kontak</a>
+</div>
+<a class="bg-primary-container text-white px-6 py-2 rounded-full font-bold text-xs tracking-widest scale-95 active:scale-90 transition-transform inline-block" href="https://wa.me/6282146233077?text=Halo%20Bakso%20Mercon,%20saya%20ingin%20memesan..." target="_blank">PESAN SEKARANG</a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-start overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="Close up of steaming spicy meatball soup with vibrant red chili broth and fresh herbs in a dark ambient setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRCwWn6DxgaqpOPm149GVkulF-bQkHyEZhFiw3Xzt7PFI2NKFbyClK3rO-729St7pJ9s4lv6oW7Y1SnoJG9VK_H-4RBwWSJo4KA2ScE3HvzHsBTAMURtc94f4usOeEIjUWqIO6BU65piHkT9Npavd40_HfjrY0GwYvHeZOIQ_fEDhA6SNarf6rNZXcVaCSBcQZWOIBjyEECFtIqyFJImERGrvpsyUZJeUcViwBiBNEv0JTWJIkhQKETKZ2MmzJpotxH0t9LX0AZUw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 md:px-20 max-w-4xl">
+<div class="inline-flex items-center gap-2 bg-secondary-container/20 border border-secondary-container/30 px-4 py-1 rounded-full mb-6">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-secondary-container font-label text-xs font-bold tracking-widest uppercase">Level Pedas Maksimal</span>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl font-black text-on-surface leading-none tracking-tighter mb-6 uppercase">
+                    Bakso Mercon: <span class="text-transparent bg-clip-text bg-kinetic-heat">Sensasi Pedas Meledak!</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-10 font-body">
+                    Rasakan ledakan rasa di setiap gigitan. Dibuat dengan resep rahasia dan cabai pilihan yang membakar semangat.
+                </p>
+<div class="flex flex-col md:flex-row gap-4">
+<a class="bg-kinetic-heat text-on-primary-fixed font-black py-5 px-10 rounded-xl text-sm tracking-widest uppercase shadow-lg shadow-primary-container/20 hover:scale-105 transition-transform inline-block text-center" href="https://wa.me/6282146233077?text=Halo%20Bakso%20Mercon,%20saya%20ingin%20memesan..." target="_blank">Pesan Sekarang</a>
+<a class="border border-outline-variant/30 text-on-surface py-5 px-10 rounded-xl text-sm tracking-widest uppercase hover:bg-surface-container-high transition-colors inline-block text-center" href="#menu">Lihat Menu</a>
+</div>
+</div>
+</section>
+<!-- Featured Menu (Bento Grid Style) -->
+<section class="py-24 px-6 md:px-20 bg-surface" id="menu">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase tracking-tighter text-glow-spicy mb-4">Varian Terpanas</h2>
+<p class="text-stone-400 font-body">Pilih level tantanganmu. Setiap mangkuk adalah karya seni pedas.</p>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 hover:bg-primary-container hover:text-white transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-primary-container text-white transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Featured Item -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-3xl bg-surface-container-low aspect-video md:aspect-auto h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" data-alt="Large bowl of special Bakso Mercon with multiple meatball sizes and deep red oily spicy broth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDy6ZS4fnDcFL1pfFPJt4gFEyJxtK-f1nfVFCdw8PhIbhvptbXKmqSKjBZsLSaOAIuzlmQxA46wbCDxsD_T2Pd5tmMVMZ1tEz6Vm8SqPcPj83p5oWsb6j6isdAqS4D2YjNcrjBBvd-SqkSOTUFDMU9A9b4nmYGZCJ-sO9BVFLkWKF27vZ7MsrxUW-PhgXwS5dQ1ZIIvDX1zXmeLVTFtIMhtRKi79n9BO1-vbtg8LSzLCoA6EFYt_2XpvhrAZFWMYJ74eS9-AgIMlI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="bg-primary text-on-primary font-label text-[10px] px-3 py-1 rounded-full font-bold tracking-widest uppercase mb-4 inline-block">Best Seller</span>
+<h3 class="font-headline text-3xl font-black text-white uppercase mb-2">Bakso Granat Super</h3>
+<p class="text-stone-300 font-body max-w-md">Isian daging cincang pedas melimpah dengan ledakan cabai rawit di dalamnya.</p>
+</div>
+<div class="text-right">
+<p class="text-primary font-headline text-3xl font-black">Rp 35.000</p>
+<a class="bg-kinetic-heat text-on-primary-fixed font-black py-2 px-6 rounded-lg text-[10px] tracking-widest uppercase mt-4 hover:scale-105 transition-transform whitespace-nowrap inline-block" href="https://wa.me/6282146233077?text=Halo%20Bakso%20Mercon,%20saya%20ingin%20memesan..." target="_blank">Beli Sekarang</a></div>
+</div>
+</div>
+</div>
+<!-- Side Item 1 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-3xl bg-surface-container-high h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" data-alt="Close up of smaller spicy meatballs served on a rustic dark plate with aromatic spices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWSzQ01sucCrFuRi-lVUOTHH4W8hnnqzrZI2RSprq_N8bgWRaE57hArSs-wSCPNsJ8h5lTXDrGjuUshTv4SfspEC0hjD1EAjDKTyRbUEOj53pW5V_ICn5XUDThEauhRniHa1WHc3qjJHJYipq_R1ldy1S5lLD0SEooPr_lOlbv-pc3UyCCr6zunrR99AoMsLz5WGtVsxJuLAsyifF8yd_texoaqtqErH0O3jZum9FZ2P8y0slKQ3crGHtOsMiu6wIHrqW-KeFnyk0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-2xl font-black text-white uppercase mb-1">Bakso Kerikil Pedas</h3>
+<p class="text-stone-300 font-body text-sm mb-4">Porsi kecil yang menggigit, pas untuk cemilan sore.</p>
+<p class="text-secondary font-headline text-2xl font-black">Rp 18.000</p><a class="bg-kinetic-heat text-on-primary-fixed font-black py-2 px-6 rounded-lg text-[10px] tracking-widest uppercase mt-4 hover:scale-105 transition-transform inline-block" href="https://wa.me/6282146233077?text=Halo%20Bakso%20Mercon,%20saya%20ingin%20memesan..." target="_blank">Beli Sekarang</a>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-3xl bg-surface-container-high h-[350px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Traditional Indonesian spicy soup being prepared with steam rising from a dark bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtzU8bIzPgA8JDoNm_B4uMtRwfg4UnZS4z_ykPWk4w0sBLTLHFEbW1GNV7SdVKzxBgjwwT7k4nx53BuxfRjdqDWEDs_HHNor-rgDYa7cCV6eKPlJgRIfdbDuRA7vXcVuiPZGGkFsqGG5whwTvkcb72_z5lg0nrk4GD1MXkp6r7_4WA8uQ65ygnSCBE2CvfMegfhyaHrCK6GuVSMxBIGRpHn3KQYmXDhrF5yyKsOfl5yc0_0HWeLu101usy_EvBXw93wB4gmwvN2HA"/>
+<div class="absolute bottom-0 left-0 p-8"><h3 class="font-headline text-xl font-black text-white uppercase mb-1">Bakso Keju Meleleh</h3><p class="text-secondary font-headline text-xl font-black">Rp 25.000</p><a class="bg-kinetic-heat text-on-primary-fixed font-black py-2 px-6 rounded-lg text-[10px] tracking-widest uppercase mt-4 hover:scale-105 transition-transform inline-block" href="https://wa.me/6282146233077?text=Halo%20Bakso%20Mercon,%20saya%20ingin%20memesan..." target="_blank">Beli Sekarang</a></div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-3xl bg-surface-container-high h-[350px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Spicy noodles with meatballs and chili oil on top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9DK0Y1_Z9nvDjNIxglJBaf386qvEm260-ZQdOLlqL_4vzYqfjd-xEqx4vCeWkiQPmGGv2NtRkjjLuLUxfC6dqrOLLxG0zIB0vtfU6gibGYGjm1qT-SizFMJrDFgSKR6JkuxHKpHBRtiww77Wuu00IdjgfThjpiSCT1PZbFyaAXocSXh_l-nTt5AFj3_YJY4K5ZOkFBDkW9Xpx_M4ZE_pkz-BdAmmdLFOV042IsIfLb2bVkPzgbEi575blz08paqD0Lry7ZK4t8-o"/>
+<div class="absolute bottom-0 left-0 p-8"><h3 class="font-headline text-xl font-black text-white uppercase mb-1">Bakso Mie Mercon</h3><p class="text-secondary font-headline text-xl font-black">Rp 22.000</p><a class="bg-kinetic-heat text-on-primary-fixed font-black py-2 px-6 rounded-lg text-[10px] tracking-widest uppercase mt-4 hover:scale-105 transition-transform inline-block" href="https://wa.me/6282146233077?text=Halo%20Bakso%20Mercon,%20saya%20ingin%20memesan..." target="_blank">Beli Sekarang</a></div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-3xl bg-primary-container h-[350px] flex flex-col justify-center items-center p-8 text-center">
+<span class="material-symbols-outlined text-white text-6xl mb-6">restaurant</span>
+<h3 class="font-headline text-2xl font-black text-white uppercase mb-4">Cek Menu Lengkap</h3>
+<p class="text-white/80 font-body text-sm mb-8">Masih banyak varian pedas lainnya yang menunggumu!</p>
+<button class="bg-white text-primary-container font-black py-3 px-8 rounded-full text-xs tracking-widest uppercase" onclick="alert('Menu PDF sedang disiapkan. Silakan hubungi kami via WhatsApp untuk daftar menu lengkap.')">Download PDF</button>
+</div>
+</div>
+</section>
+<!-- Tentang Kami -->
+<section class="py-24 px-6 md:px-20 bg-surface-container-lowest" id="about">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 rounded-3xl overflow-hidden aspect-[4/5]">
+<img class="w-full h-full object-cover" data-alt="Interior of a modern industrial Indonesian restaurant with warm lighting and dark wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-A_MFXiQ_UmVp2SGGugohG-4sD4yEQSIKHSD57H6DOj21ZweUggU2CuDw3ivMoTN4YluIAUI21y1mc9_m239DUZSPhUyOvenU3s7dbUZki-XwpXQ3eQamSNa7KVa-4Sdy6GBgdPL1WyEEfbGBkpTLhJxLMp5EroqsB6IqehA0gqEmgfr4ZJx2YEY0iDIvoT7IvGPgISk4mRHby9Q4PQ9GL2CxLc3GtK-fWSn9mebnr04_ubuxt3nZnxvsuNR76LvOUU3UeOsOjnU"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-surface-container-high p-8 rounded-3xl shadow-2xl border border-outline-variant/10">
+<p class="text-4xl font-headline font-black text-primary mb-1">10+</p>
+<p class="text-xs font-label uppercase tracking-widest text-stone-400">Tahun Berdiri</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-secondary font-label text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Asal Usul Kami</span>
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-tight">Tradisi Pedas <br/><span class="text-primary">Tanpa Kompromi</span></h2>
+<div class="space-y-6 text-stone-300 font-body leading-relaxed">
+<p>Bakso Mercon dimulai dari sebuah kedai kecil di sudut kota dengan satu misi: menciptakan bakso paling berani di Indonesia. Kami tidak hanya menjual makanan, kami menjual pengalaman sensorik.</p>
+<p>Setiap butir bakso kami dibuat dari 100% daging sapi pilihan tanpa campuran pengawet. Rahasia "ledakan" kami terletak pada perpaduan 5 jenis cabai nusantara yang diproses secara tradisional untuk menjaga aroma dan tingkat kepedasan alaminya.</p>
+</div>
+<div class="mt-10 grid grid-cols-2 gap-8">
+<div>
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h4 class="font-bold text-white uppercase text-sm mb-2">Bahan Organik</h4>
+<p class="text-stone-500 text-xs">Cabai segar langsung dari petani lokal setiap harinya.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 1;">award_star</span>
+<h4 class="font-bold text-white uppercase text-sm mb-2">Kualitas Premium</h4>
+<p class="text-stone-500 text-xs">Standar kebersihan dan rasa yang konsisten di tiap cabang.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Kontak & Map -->
+<section class="py-24 px-6 md:px-20 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter mb-12">Siap Untuk <span class="text-secondary">Tantangan?</span></h2>
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface transition-all">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<div>
+<p class="text-stone-500 text-xs uppercase font-label tracking-widest mb-1">WhatsApp Kami</p>
+<p class="text-xl font-bold text-white">+62 821-4623-3077</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface transition-all">
+<span class="material-symbols-outlined text-3xl">share</span>
+</div>
+<div>
+<p class="text-stone-500 text-xs uppercase font-label tracking-widest mb-1">Ikuti Instagram</p>
+<p class="text-xl font-bold text-white">@baksomercon_official</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface transition-all">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<div>
+<p class="text-stone-500 text-xs uppercase font-label tracking-widest mb-1">Lokasi Pusat</p>
+<p class="text-xl font-bold text-white">Jl. tanggul jember jawa timur </p>
+</div>
+</div>
+</div>
+<div class="mt-12 p-8 rounded-3xl bg-kinetic-heat">
+<h4 class="font-headline text-xl font-black text-on-primary-fixed uppercase mb-2">Jam Operasional</h4>
+<p class="text-on-primary-fixed/80 text-sm">Senin - Minggu: 10:00 - 22:00 WIB</p>
+</div>
+</div>
+<div class="rounded-3xl overflow-hidden h-[500px] border border-outline-variant/10 shadow-2xl relative">
+<img class="w-full h-full object-cover opacity-80" data-alt="Dark stylized map of a city center with orange and red highlights indicating points of interest" data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc1QSC1trHO0VChS4XNfYs3CF5eOpfC_IIt-trBf2r2D7p4X0IBfVTJB1RO0MuyDwEt-1PUAJXGUa6osEpUpxKHOLll84rvdQPRhKtEHi2oyOLyT-oXB4kPRMjd-L3U6Oq1P5xeeQnwXz6NucO9x5EgR5ifcjzJk7hyM-fRGX0N71B0UCjKAYsCyNFSPEU_T1GYVtPxRjWwQH7AZxhajOT8gONxljU2-3tpdsC5WZNv27DFF99KfbbiWZe6XEXJo2yNjkMm6n7UOI"/>
+<div class="absolute inset-0 pointer-events-none border-[20px] border-surface"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/30 rounded-full animate-ping"></div>
+<span class="material-symbols-outlined text-primary text-5xl relative z-10" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 border-t border-white/5">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-bold text-[#ffb3ac] font-['Epilogue'] uppercase italic">BAKSO MERCON</span>
+<p class="font-['Be_Vietnam_Pro'] text-[10px] tracking-widest uppercase text-stone-600">© 2024 BAKSO MERCON. ALL RIGHTS RESERVED. EXPLOSIVE FLAVOR.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Be_Vietnam_Pro'] text-[10px] tracking-widest uppercase text-stone-600 hover:text-[#f27a00] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Be_Vietnam_Pro'] text-[10px] tracking-widest uppercase text-stone-600 hover:text-[#f27a00] transition-colors" href="#">Terms of Service</a>
+<a class="font-['Be_Vietnam_Pro'] text-[10px] tracking-widest uppercase text-stone-600 hover:text-[#f27a00] transition-colors" href="#">Franchise</a>
+</div>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" href="https://baksomercon.com">
+<span class="material-symbols-outlined text-sm">language</span>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" href="mailto:info@baksomercon.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</footer>
+<!-- Mobile Nav Anchor -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-[#0e0e0e] flex justify-around items-center py-4 z-[60] border-t border-white/5">
+<a class="flex flex-col items-center gap-1 text-[#ffb3ac]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[8px] uppercase tracking-widest font-bold">Beranda</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500" href="#menu">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="text-[8px] uppercase tracking-widest">Menu</span>
+</a>
+<div class="relative -top-6">
+<div class="w-14 h-14 rounded-full bg-kinetic-heat flex items-center justify-center shadow-lg shadow-primary-container/40 border-4 border-surface">
+<span class="material-symbols-outlined text-on-primary-fixed" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<a class="flex flex-col items-center gap-1 text-stone-500" href="#about">
+<span class="material-symbols-outlined">info</span>
+<span class="text-[8px] uppercase tracking-widest">Tentang</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500" href="#contact">
+<span class="material-symbols-outlined">call</span>
+<span class="text-[8px] uppercase tracking-widest">Kontak</span>
+</a>
+</div>
+</body></html>
